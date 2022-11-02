@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>WOR_Combats</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel = stylesheet href="../css/style_sheet.css">
+    </head>
+    <body>
+        <header>
+            <div class = "center">
+                <div id="title">
+                    <h1>wars of ressources</h1>
+                </div>
+                <div class="nav">
+                    <nav>
+                        <ul>
+                            <a href="../index.html"><li>
+                                deroulement
+                            </li></a>
+                            <a href="#"><li>
+                                <strong>combats</strong>
+                            </li></a>
+                            <a href="clan.html"><li>
+                                clans
+                            </li></a>
+                            <a href="ressources.html"><li>
+                                ressources
+                            </li></a>
+                            <a href="territoire.html"><li>
+                                territoires
+                            </li></a>
+                            <a href="batiments.html"><li>
+                                batiments
+                            </li></a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="bande">
+        </section>
+        <main>
+            <div class="bande">
+            </div>
+            <div class="pass">
+                <section>
+                    <h1>Introduction</h1>
+                    <div class="container">
+                        <p>
+                            Un combat se déroule sur un territoire et entre deux armées ou plus.
+                            Le combat est systématiquement disputé par un
+                            <b title = "celuis qui possède le territoire"> défenseur </b> et un
+                            <b title = "celuis qui convoite le territoire"> attaquant </b>.
+                            le gagnant obtient (ou conserve) le territoire.
+                        </p>
+                </section>
+                <section>
+                    <h1>Battaille</h1>
+                    <div class="container">
+                        <h3><rom>I</rom> le Début</h3>
+                        <p>
+                            <b title="le joueur dont c'est le tour">l'acteur</b>, lors-ce-qu'il
+                            <a href="../index.html#tour_attaque#"> attaque </a> doit utiliser
+                            des points d'attaque, il récupère ces point au début de chacun
+                            de ses tours d'attaque et n'en conserve pas d'un tour sur l'autre.
+                            le nombre de point d'attaque nécessaire pour attaquer un territoire
+                            dépend du <a href=territoire.html#>territoire</a>.
+                            <br><br>
+                            <b>BN:</b> rien n'empêche un joueur d'attaquer plusieurs fois un même
+                            territoire dans un même tour d'attaque tant qu'il a assez de points d'attaque.
+                        </p>
+                        <h3 id="post_bataille"><rom>II</rom> le Combat</h3>
+                        <p>
+                            Le Défenseur et l'Attaquant comptent le total de la force de leurs troupes engagés
+                            (la somme de la force des unitées engagés dans chaque camps en ajoutant
+                            les éventuels bonus ou malus). Ils ajoutent à ces valeurs un dés 6
+                            (chacun lance un dés 6 et ajoute le résultat à la force de ses troupes).
+                            Le vainqueur est celui qui obtient le plus grand résultat.
+                            Si les deux résultats sont égaux, la bataille est une égalité.
+                            <br><br>
+                            <b>BN:</b> si la force des défenseurs est de 0, la victoire est pour les attaquant.
+                            Cette règle ne s'applique pas si ce sont les attaquant qui ont une force de 0
+                            <br><br>
+                            <b>S.N.:</b> si la différence de force est supérieure à 5,
+                            il est inutile de lancer les dés.
+                        </p>
+                        <h3><rom>III</rom> l'Après Bataille</h3>
+                        <p>
+                            Le territoire va aux vainqueurs et le perdant prend deux blessures
+                            sur son unité la plus forte engagée et une sur la plus faible et se replie 
+                            Si il le peux avec ses blessés sur le territoire frontalier qu'il pesède de son choix.
+                            En cas d'égalité, chaque camp prend une blessure sur son unité la plus faible et les armées attaquantes sont repoussées.
+                            <br><br>
+                            <b>BN:</b> le gagnant peut destuire les batiments du territoire. 
+                            Un joueur peut d'ailleur destruire ses batiements pendant son tour. 
+                        </p>
+                        <h3><rom>IV</rom> les Prisonniers</h3>
+                        <p>
+                            si une <b title="groupe unitées du même joueurs situées sur le même territoire">armée</b>
+                            perdante n'a pas de retraite (attaquante depuis un territoire non possédé par
+                            son camp ou défenseur avec aucun territoire allié frontalier), elle est
+                            <b title= "#N.T.">capturée par le vainqueur</b>
+                            idem pour les unités qui étaient blessés avant la bataille.
+                            <br><br>
+                            <b>N.T.; capturé:</b> le <b title="le joueur qui a capturé le prisonnier">geôlier</b>
+                            peut, soit les convertir en^^ au ratio de 1^^/(force en bonne santée),
+                            soit les revendre au <b>joueur à qui le prisonnier a été pris</b>
+                            contre ce que le <b title="le joueur qui a capturé">geôlier</b> veut, le <b>joueur à qui le prisonnier a été pris</b>
+                            pourra alors les replacer sur un territoire frontalier à un territoire du <b title="le joueur qui
+                            l'a capturé">geôlier</b> s' il n'en a pas, la deuxième option n'est pas disponible. Bien sûr le
+                            <b>joueur à qui le prisonnier a été pris</b> peut refuser de racheter les prisonniers, auquel-cas,
+                            La deuxième option n'est pas disponible. Le choix du sort des prisonnier doit être fait juste après
+                            leur capture, il est impossible de les stocker
+                        </p>
+                        <h3><rom>V</rom> les Blessures</h3>
+                        <p>
+                            Une unitée qui subit une blessure est blessé, elle perd un de force.
+                            Au debut de son tour, <b title="le joueur dont c'est le tour">l'acteur</b> peut 
+                            soigner ses troupes pour 1^^ par unitée blessée. Si une unitée blessée subit à nouveau une blessure,
+                            elle est tué, même si les deux blessure surviennent en même temps.
+                            <br><br>
+                            <b>BN:</b> Une <rom>unité</rom> blessée ne peut pas se déplacer
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <section class="mid">
+                <div><img src="../image/chauve_souris.jpg"></div>
+                <div><img src="../image/clone.jpg"></div>
+                <div><img src="../image/paysant_1.jpg"></div>
+                <div><img src="../image/paysant_2.jpg"></div>
+                <div><img src="../image/paysant_3.jpg"></div>
+                <div><img src="../image/unknow.jpg"></div>
+                <div><img src="../image/mage_1.jpg"></div>
+                <!--<div><img src="../image/mage_2.jpg"></div>-->
+                <div><img src="../image/dragon.jpg"></div>
+                <div><img src="../image/serpent.jpg"></div>
+            </section>
+        </footer>
+    </body>
+</html>

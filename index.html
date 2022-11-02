@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Wars Of Ressources</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel = stylesheet href="css/style_sheet.css">
+    </head>
+    <body>
+        <header>
+            <div class = "center">
+                <div id="title">
+                    <h1>Wars of Ressources</h1>
+                </div>
+                <div class="nav">
+                    <nav>
+                    <ul>
+                        <a href="#"><li>
+                            <strong>deroulement</strong>
+                        </li></a>
+                        <a href="pages\combat.html"><li>
+                            combats
+                        </li></a>
+                        <a href="pages\clan.html"><li>
+                            clans
+                        </li></a>
+                        <a href="pages\ressources.html"><li>
+                            ressources
+                        </li></a>
+                        <a href="pages\territoire.html"><li>
+                            territoires
+                        </li></a>
+                        <a href="pages\batiments.html"><li>
+                            batiments
+                        </li></a>
+                    </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="bande">
+        </section>
+        <main>
+            <div class="bande">
+            </div>
+            <div>
+                <section>
+                <h1>Introduction</h1>
+                <div class="container">
+                    <p>
+                        Wars of Resources est un jeu de plateau fortement inspiré du Risk et du Small-Word.<br> 
+                        À l'instar de ces deux jeux, le plateau est constitué de nombreux “territoires” avec des caractéristiques
+                        plus ou moins différentes et le jeu est centré sur “la conquête” de ceux-ci.
+                        <br><br>
+                        <b>NB:</b> le joueurs ayant le plus de ressource € à la fin gagne
+                    </p>
+                </div>
+                </section>
+                <section>
+                <h1 id="premier-tour">Premier-tour</h1>
+                <div class="container">
+                    <h3> <rom>0</rom> Ordre du tour</h3>
+                    <p>
+                        le premier à jouer est choisi sur un critère lambda (le plus jeune,
+                        celui qui fait le meilleur score sur un lancer de dés,
+                        le plus habitué au jeu...) et ensuite on tourne dans le sens horaire
+                        (le sens de jeux est totalement arbitraire, il ne change presque rien à la partie)<br>
+                        <br>
+                        <b>LN</b>: le joueur dont c'est le tour sera appelé <b>l'acteur</b>
+                    </p>
+                    <h3><rom>I</rom> Choix des clans</h3>
+                    <p>
+                        <b title="le joueur dont c'est le tour">l'acteur</b> doit choisir un <a href="pages/clan.html#">clan</a> 
+                        à jouer pour le reste de la partie, il ne pourra pas en changer.
+                    </p>
+
+                    <h3> <rom>II</rom> Ressources de depart</h3>
+                    <p>
+                        <b title="le joueur dont c'est le tour">l'acteur</b> recois les <a href="pages/ressources.html#">ressources</a> 
+                        de départ, soit 5€, 5^^ et 3 <rom>unite I</rom>.
+                    </p>
+                    <h3><rom>III</rom> Recrutement</h3>
+                    <p>
+                        <b title="le joueur dont c'est le tour">l'acteur</b> peut, si il le souhaite,
+                        utiliser des ^^ pour recruter des <rom>unite I</rom> au <b titre="2^^">prix de base</b>
+                    </p>
+                    <h3><rom>IV</rom> Début de la conquiete</h3>
+                    <p>
+                        <b title="le joueur dont c'est le tour">l'acteur</b> peut alors 
+                        <a href="pages/combat.html#"> attaquer </a> un des territoires du bord du terrain.
+                        si il est <b title="perdre une conquête"> repoussé </b> il peut recommencer 
+                        sur un autre territoire sans assumer de <a href="pages/combat.html#post_bataille">pertes</a>.
+                        Une fois que le joueurs a récupéré son premier territoire,
+                        il peut poursuivre son <a href="#tour_attaque"> tour d'attaque</a> normalement
+                        (il ne récupère cependant pas les points d'attaque utilisés).
+                    </p>
+                    <h3><rom>V</rom> Récuperation des ressources</h3>
+                    <p>
+                        <b title="le joueur dont c'est le tour">l'acteur</b> <a href="pages/territoire.html#"> récupère les ressources </a> du tour pour les territoires qu'il possède désormais.
+                    </p>
+                    <h3><rom>VI</rom> Construction</h3>
+                    <p>
+                        <b title="le joueur dont c'est le tour">l'acteur</b>  peut <a href="pages/batiments.html#">construire</a> des batiments sur ses territoires
+                    </p>
+                </div>
+                </section>
+                <section>
+                <h1 id="unite">Tour normal</h1>
+                <div class="container">
+                    <h3><rom>0</rom> Introduction</h3>
+                    <p>
+                        La partie dure 12 tours, indépendamment du nombre de joueurs et en comptant le premier tour.<br>
+                        certaines capacités peuvent modifier l'ordre des étapes du tour
+                    </p>
+                    <h3><rom>I</rom> Récupération des ressources</h3>
+                    <p>
+                        <b title="le joueur dont c'est le tour">l'acteur</b> <a href="pages/territoire.html#"> récupère les ressources</a> du tour pour les
+                        territoires qu'il possède.
+                    </p>
+                    <h3><rom>II</rom> Exploitation</h3>
+                    <p>
+                        <b title="le joueur dont c'est le tour">l'acteur</b> peut utiliser les differents 
+                        <a href="pages/batiments.html#">batiment</a> qu'il possède et 
+                        <a href="pages/ressources.html#cartes">poicher les cartes</a> qu'il peut piocher dans sa situation.
+                    </p>
+                    <h3><rom>III</rom> Recrutement</h3>
+                    <p>
+                        <b title="le joueur dont c'est le tour">l'acteur</b> peut recruter des <rom>unité I</rom> pour 2^^ pièce
+                        sur les territoire qu'il possède (une seule par territoire)
+                    </p>
+                    <h3><rom>IV</rom> Construction</h3>
+                    <p>
+                        <b title="le joueur dont c'est le tour" id="tour_attaque">l'acteur</b>  peut <a href="pages/batiments.html#">construire</a> des batiments sur ses territoires
+                    </p>
+                    <h3 ><rom>V</rom> Déplacement</h3>
+                    <p>
+                        <b title="le joueur dont c'est le tour">l'acteur</b> peut déplacer ses troupes au prix de 1 
+                        <rom title="ressource subjective à chaque unité">pas</rom> par changement de territoire
+                        vers un territoire possédé par <b title="le joueur dont c'est le tour">l'acteur</b> et de 1 
+                        <rom title="ressource subjective à chaque unité">plume</rom> par territoire non possédé,
+                        ou possédé par un adversaire. cerains territoires coûtent plus cher à traverser.
+                        <br><br>
+                        <b>NB:</b> rien n'empeche les unitée d'utiliser des plumes pour se deplacer vers des territoire 
+                        qu'ils possèdent 
+                    </p>
+                    <h3><rom>VI</rom> Attaque</h3>
+                    <p>
+                        <b title="le joueur dont c'est le tour">l'acteur</b> peut <a href="pages/combat.html#"> attaquer </a>
+                        les territoires frontaliers
+                        aux positions de ses troupes. Il est possible d'attaquer avec plusieurs
+                        <b title="groupe unitées du même joueurs situées sur le même territoire">armées</b> si elles sont toutes
+                        frontalières au territoire attaqué.
+                        si <b title="le joueur dont c'est le tour">l'acteur</b> est <b title="perdre une conquête"> repoussé </b>,
+                        toutes ses armées se replient sur le territoire où ils étaients avant l'attaque
+                        si celui-ci est possédé par si <b title="le joueur dont c'est le tour">l'acteur</b>.
+                        sinon, l'armée <b title="toules les unitée meurent">est détruite</b>.
+                        <br><br>
+                        <b>NB:</b> attaquer un territoire ne coûte aucun <rom>pas</rom> aux unitées qui attaquent
+                    </p>
+                    <h3><rom>VII</rom> Reorganisation</h3>
+                    <p>
+                        <b title="le joueur dont c'est le tour">l'acteur</b> peut deplacer toutes ses unitées entre ses propres territoires
+                        pour se preparer au tour de défence voire même préparer son prochain tour d'attaque.
+                    </p>
+                </div>
+                </section>
+                <section>
+                    <h1 id="unite">Derniers tours</h1>
+                    <div class="container">
+                        <h3><rom>I</rom> Le 11e tour</h3>
+                        <p>
+                            à le fin de son tour, le <b title="le joueur dont c'est le tour">l'acteur</b>
+                            a une récupération de ressources en plus. cependant, 
+                            il ne récupère que les ressources € de ses <a href="pages/territoire.html#">territoires</a>, 
+                            donc rien des héritages des territoire et pas de ^^ ni de ressources spéciales.
+                        </p>
+                        <h3><rom>II</rom> Le 12e tour</h3>
+                        <p>
+                            à le fin de son tour, le <b title="le joueur dont c'est le tour">l'acteur</b>
+                            a une récupération de ressources en plus. cependant, 
+                            il ne récupère que les ressources € de ses <a href="pages/territoire.html#">territoires</a>, 
+                            donc rien des héritages des territoire et pas de ^^ ni de ressources spéciales.
+                        </p>
+                        <h3><rom>III</rom> Après de 12e tour</h3>
+                        <p>
+                            tous les joueurs ont une récupération de ressources en plus. cependant, 
+                            ils ne récupèrent que les ressources € de leurs <a href="pages/territoire.html#">territoires</a>, 
+                            donc rien des héritages des territoire et pas de ^^ ni de ressources spéciales.
+                        </p>
+                        <h3><rom>IV</rom> Fin du Jeux</h3>
+                        <p>
+                            Le gagnant est le joueur qui possède le plus de € à la fin de la partie
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+        <footer>
+            <section class="mid">
+                <div><img src="image/chauve_souris.jpg"></div>
+                <div><img src="image/clone.jpg"></div>
+                <div><img src="image/paysant_1.jpg"></div>
+                <div><img src="image/paysant_2.jpg"></div>
+                <div><img src="image/paysant_3.jpg"></div>
+                <div><img src="image/unknow.jpg"></div>
+                <div><img src="image/mage_1.jpg"></div>
+                <!--<div><img src="image/mage_2.jpg"></div>-->
+                <div><img src="image/dragon.jpg"></div>
+                <div><img src="image/serpent.jpg"></div>
+            </section>
+        </footer>
+    </body>
+</html>
